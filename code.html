@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .form-step { display: none; }
+        #step1:checked ~ .step1, #step2:checked ~ .step2 { display: block; }
+    </style>
+</head>
+<body>
+    <input type="radio" id="step1" name="step" checked>
+    <input type="radio" id="step2" name="step">
+    
+    <div class="form-step step1">
+        <h2>Step 1</h2>
+        <label for="step2">Next</label>
+    </div>
+    
+    <div class="form-step step2">
+        <h2>Step 2</h2>
+        <label for="step1">Back</label>
+    </div>
+</body>
+</html>
